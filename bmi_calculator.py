@@ -16,6 +16,6 @@ if bmi>0:
     elif (bmi<=39.9):
         print(f"{name}, you are severely obese!")
     elif (bmi>=40):
-        print(f"{name}, you are morbidly obese!!")
+        print(f"{name}, you are morbidly obese!")
 else:
     print("Please enter valid inputs")
