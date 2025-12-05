@@ -1,0 +1,27 @@
+import wx
+
+app = wx.App(False)
+frame = wx.Frame(None, title="BMI CALCULATOR", size=(800, 900))
+panel = wx.Panel(frame)
+panel.SetBackgroundColour("light blue")
+
+# HEADING
+heading = wx.StaticText(panel, label="BMI CALCULATOR", pos=(280, 20))
+heading.SetFont(wx.Font(22, wx.FONTFAMILY_ROMAN, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_BOLD))
+
+#BMI DESCRIPTION
+text = (
+    "Body Mass Index (BMI) is a popular metric to help you track your health based on "
+    "body fat constituency. You this BMI calculator to "
+    "know your health status.\n\n"
+    "In today's world of changing lifestyles, stress and unhealthy eating habits, it is "
+    "highly important to keep track of your health.\n\n"
+    "By keeping track of your weight, you can take timely measures to reduce the chances "
+    "of obesity-related health issues."
+)
+
+paragraph = wx.StaticText(panel, label=text, pos=(40, 80))
+paragraph.SetFont(wx.Font(12, wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL))
+
+frame.Show()
+app.MainLoop()
