@@ -325,14 +325,19 @@ def on_exit(event):
 app = wx.App()
 
 # Create main window
-frame = wx.Frame(None, title="Main Menu", size=(400, 350))
+frame = wx.Frame(None, title="HEALTH ASSISTANT", size=(400, 350))
 panel = wx.Panel(frame)
+panel.SetBackgroundColour("#D5D1E9")
 
 # Create buttons
 btn1 = wx.Button(panel, label="bmi calculator", size=(200, 40))
+btn1.SetBackgroundColour("#D0E4EE")
 btn2 = wx.Button(panel, label="symptom checker", size=(200, 40))
+btn2.SetBackgroundColour("#F3F5A9")
 btn3 = wx.Button(panel, label="calorie counter", size=(200, 40))
+btn3.SetBackgroundColour("#F5CF9F")
 btn4 = wx.Button(panel, label="Exit", size=(200, 40))
+btn4.SetBackgroundColour("#F5A7A6")
 
 # Bind events
 btn1.Bind(wx.EVT_BUTTON, on_button1)
